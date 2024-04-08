@@ -72,30 +72,37 @@ app.get('/ocpi/versions/2.2', (req, res) => {
             endpoints: [
                 {
                     identifier: "credentials",
+                    role: "SENDER",
                     url: "https://ocpi.onrender.com/ocpi/2.2/credentials"
                 },
                 {
                     identifier: "tokens",
+                    role: "RECEIVER",
                     url: "https://ocpi.onrender.com/ocpi/2.2/tokens"
                 },
                 {
                     identifier: "commands",
+                    role: "RECEIVER",
                     url: "https://ocpi.onrender.com/ocpi/2.2/commands"
                 },
                 {
                     identifier: "locations",
+                    role: "SENDER",
                     url: "https://ocpi.onrender.com/ocpi/2.2/locations"
                 },
                 {
                     identifier: "sessions",
+                    role: "SENDER",
                     url: "https://ocpi.onrender.com/ocpi/2.2/sessions"
                 },
                 {
                     identifier: "cdrs",
+                    role: "SENDER",
                     url: "https://ocpi.onrender.com/ocpi/2.2/cdrs"
                 },
                 {
                     identifier: "tariffs",
+                    role: "SENDER",
                     url: "https://ocpi.onrender.com/ocpi/2.2/tariffs"
                 }
             ]
