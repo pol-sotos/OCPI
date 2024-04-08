@@ -7,11 +7,11 @@ app.get('/ocpi/versions', (req, res) => {
         data: [
             {
                 version: "2.1.1",
-                url: "https://ocpi.onrender.com/versions/2.1.1"
+                url: "https://ocpi.onrender.com/ocpi/versions/2.1.1"
             },
             {
                 version: "2.2",
-                url: "https://ocpi.onrender.com/versions/2.2"
+                url: "https://ocpi.onrender.com/ocpi/versions/2.2"
             }
         ],
         status_code: 1000,
@@ -22,7 +22,7 @@ app.get('/ocpi/versions', (req, res) => {
     res.json(response);
 });
 
-app.get('/ocpi/2.1.1', (req, res) => {
+app.get('/ocpi/versions/2.1.1', (req, res) => {
     const response = {
         data: {
             version: "2.1.1",
@@ -65,7 +65,7 @@ app.get('/ocpi/2.1.1', (req, res) => {
     res.json(response);
 });
 
-app.get('/ocpi/2.2', (req, res) => {
+app.get('/ocpi/versions/2.2', (req, res) => {
     const response = {
         data: {
             version: "2.2",
